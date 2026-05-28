@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Código IA - El portal líder en español sobre Inteligencia Artificial. Noticias, herramientas, tutoriales y las últimas novedades de IA para México, España, Argentina y toda América Latina.">
+  <meta name="keywords" content="inteligencia artificial, ChatGPT, Claude, Gemini, herramientas IA, noticias IA, tutoriales IA, automatización, prompts">
+  <meta name="author" content="Código IA">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Código IA – La revolución IA empieza aquí">
+  <meta property="og:description" content="El portal #1 en español sobre Inteligencia Artificial. Herramientas, noticias, prompts y automatización.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codigoia.com">
+  <meta property="og:image" content="https://codigoia.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Código IA – La revolución IA empieza aquí">
+  <meta name="twitter:description" content="Herramientas, noticias y tutoriales de Inteligencia Artificial en español.">
+  <title>Código IA – La revolución IA empieza aquí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Código IA",
+    "url": "https://codigoia.com",
+    "description": "Portal líder en español sobre Inteligencia Artificial",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://codigoia.com/buscar?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="url(#logoGrad)" stroke-width="2"/>
+          <path d="M14 16C14 14.9 14.9 14 16 14H20C22.2 14 24 15.8 24 18C24 20.2 22.2 22 20 22H16V26" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="26" cy="24" r="2.5" fill="url(#logoGrad2)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+            <linearGradient id="logoGrad2" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#herramientas" class="nav-link">Herramientas</a>
+      <a href="#noticias" class="nav-link">Noticias</a>
+      <a href="#tutoriales" class="nav-link">Tutoriales</a>
+      <a href="#modelos" class="nav-link">Modelos IA</a>
+      <a href="#prompts" class="nav-link">Prompts</a>
+      <a href="#negocios" class="nav-link">Negocios</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-search" id="searchToggle" aria-label="Buscar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+      <a href="#newsletter" class="btn-cta">Suscríbete</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" placeholder="Buscar herramientas, tutoriales, noticias de IA..." class="search-input" id="searchInput">
+      <button class="search-close" id="searchClose">✕</button>
+    </div>
+  </div>
+</header>
+
+<!-- Ticker de noticias -->
+<div class="news-ticker">
+  <div class="ticker-label">🔴 EN VIVO</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>OpenAI lanza GPT-5 con capacidades multimodales avanzadas</span>
+      <span class="ticker-sep">◆</span>
+      <span>Google DeepMind presenta Gemini Ultra 2.0 con razonamiento superior</span>
+      <span class="ticker-sep">◆</span>
+      <span>Anthropic Claude 4 supera benchmarks de razonamiento matemático</span>
+      <span class="ticker-sep">◆</span>
+      <span>Apple Intelligence llega a más de 50 países con soporte en español</span>
+      <span class="ticker-sep">◆</span>
+      <span>Meta Llama 4 disponible de forma gratuita para desarrolladores</span>
+      <span class="ticker-sep">◆</span>
+      <span>Midjourney v7 revoluciona la generación de imágenes fotorrealistas</span>
+      <span class="ticker-sep">◆</span>
+      <span>OpenAI lanza GPT-5 con capacidades multimodales avanzadas</span>
+      <span class="ticker-sep">◆</span>
+      <span>Google DeepMind presenta Gemini Ultra 2.0 con razonamiento superior</span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      La revolución IA empieza aquí
+    </div>
+    <h1 class="hero-title">
+      El portal <span class="gradient-text">líder</span> en español<br>
+      sobre <span class="gradient-text">Inteligencia Artificial</span>
+    </h1>
+    <p class="hero-subtitle">
+      Herramientas, noticias, tutoriales y prompts de IA para México, España, Argentina y toda América Latina. Mantente a la vanguardia de la revolución tecnológica.
+    </p>
+    <div class="hero-actions">
+      <a href="#herramientas" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Explorar Herramientas
+      </a>
+      <a href="#noticias" class="btn-ghost">Ver Últimas Noticias</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="250">0</span><span>+</span>
+        <span class="stat-label">Herramientas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="50">0</span><span>K+</span>
+        <span class="stat-label">Lectores</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="500">0</span><span>+</span>
+        <span class="stat-label">Tutoriales</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Featured Article -->
+  <div class="hero-featured">
+    <div class="featured-card-hero">
+      <div class="featured-badge-card">⚡ ARTÍCULO DEL DÍA</div>
+      <h2 class="featured-title-hero">Las 10 herramientas de IA que están reemplazando trabajos completos en 2026</h2>
+      <p class="featured-excerpt-hero">Desde diseño gráfico hasta análisis de datos, estas IAs están transformando industrias enteras. Descubre cuáles son y cómo usarlas a tu favor.</p>
+      <div class="featured-meta">
+        <span class="category-tag">🔥 Trending</span>
+        <span class="read-time">8 min de lectura</span>
+        <span class="date-pub">28 mayo 2026</span>
+      </div>
+      <a href="articulo-herramientas.html" class="btn-read-more">
+        Leer artículo completo
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CATEGORÍAS
+═══════════════════════════════════════════ -->
+<section class="categories-section">
+  <div class="container">
+    <div class="categories-grid">
+      <a href="#herramientas" class="cat-card cat-1">
+        <div class="cat-icon">🛠️</div>
+        <span>Herramientas IA</span>
+        <div class="cat-count">127 artículos</div>
+      </a>
+      <a href="#noticias" class="cat-card cat-2">
+        <div class="cat-icon">📡</div>
+        <span>Noticias IA</span>
+        <div class="cat-count">89 artículos</div>
+      </a>
+      <a href="#chatgpt" class="cat-card cat-3">
+        <div class="cat-icon">🤖</div>
+        <span>ChatGPT</span>
+        <div class="cat-count">64 artículos</div>
+      </a>
+      <a href="#modelos" class="cat-card cat-4">
+        <div class="cat-icon">🧠</div>
+        <span>Modelos IA</span>
+        <div class="cat-count">45 artículos</div>
+      </a>
+      <a href="#automatizacion" class="cat-card cat-5">
+        <div class="cat-icon">⚡</div>
+        <span>Automatización</span>
+        <div class="cat-count">38 artículos</div>
+      </a>
+      <a href="#negocios" class="cat-card cat-6">
+        <div class="cat-icon">💼</div>
+        <span>IA para Negocios</span>
+        <div class="cat-count">52 artículos</div>
+      </a>
+      <a href="#prompts" class="cat-card cat-7">
+        <div class="cat-icon">✨</div>
+        <span>Prompts</span>
+        <div class="cat-count">73 artículos</div>
+      </a>
+      <a href="#ganar" class="cat-card cat-8">
+        <div class="cat-icon">💰</div>
+        <span>Ganar con IA</span>
+        <div class="cat-count">31 artículos</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ARTÍCULOS DESTACADOS
+═══════════════════════════════════════════ -->
+<section class="featured-section" id="noticias">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">🔥 TRENDING AHORA</div>
+      <h2 class="section-title">Artículos <span class="gradient-text">Más Leídos</span></h2>
+      <a href="#" class="section-link">Ver todos →</a>
+    </div>
+
+    <div class="articles-grid-main">
+      <!-- Featured large card -->
+      <article class="article-card article-large" itemscope itemtype="https://schema.org/Article">
+        <div class="article-img-wrap">
+          <div class="article-img-placeholder ai-img-1">
+            <div class="img-overlay"></div>
+            <div class="img-label">ChatGPT vs Claude vs Gemini</div>
+          </div>
+          <span class="article-category-badge">Modelos IA</span>
+        </div>
+        <div class="article-content">
+          <div class="article-meta">
+            <span class="meta-fire">🔥 4.2K lecturas</span>
+            <span class="meta-time">12 min</span>
+          </div>
+          <h3 class="article-title" itemprop="headline">
+            <a href="articulo-chatgpt-vs-claude-vs-gemini.html">ChatGPT vs Claude vs Gemini: ¿Cuál es la mejor IA en 2026? Comparativa definitiva</a>
+          </h3>
+          <p class="article-excerpt">Analizamos las tres IAs más usadas del mundo: rendimiento, precio, casos de uso y cuál deberías usar según tu objetivo. No hay una sola mejor.</p>
+          <div class="article-footer">
+            <span class="author-info">
+              <div class="author-avatar">CI</div>
+              Equipo Código IA
+            </span>
+            <time itemprop="datePublished" datetime="2026-05-28">28 mayo 2026</time>
+          </div>
+        </div>
+      </article>
+
+      <!-- Side cards -->
+      <div class="articles-side">
+        <article class="article-card article-small" itemscope itemtype="https://schema.org/Article">
+          <div class="article-img-wrap small">
+            <div class="article-img-placeholder ai-img-2"></div>
+            <span class="article-category-badge">Herramientas</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="meta-fire">⚡ 2.8K</span>
+              <span class="meta-time">7 min</span>
+            </div>
+            <h3 class="article-title small-title" itemprop="headline">
+              <a href="#">Las mejores herramientas IA gratis en 2026 que debes conocer hoy</a>
+            </h3>
+            <time itemprop="datePublished" datetime="2026-05-27">27 mayo 2026</time>
+          </div>
+        </article>
+
+        <article class="article-card article-small" itemscope itemtype="https://schema.org/Article">
+          <div class="article-img-wrap small">
+            <div class="article-img-placeholder ai-img-3"></div>
+            <span class="article-category-badge">Ganar con IA</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="meta-fire">💰 3.5K</span>
+              <span class="meta-time">10 min</span>
+            </div>
+            <h3 class="article-title small-title" itemprop="headline">
+              <a href="#">Cómo ganar dinero con inteligencia artificial en 2026: 12 métodos reales</a>
+            </h3>
+            <time itemprop="datePublished" datetime="2026-05-26">26 mayo 2026</time>
+          </div>
+        </article>
+
+        <article class="article-card article-small" itemscope itemtype="https://schema.org/Article">
+          <div class="article-img-wrap small">
+            <div class="article-img-placeholder ai-img-4"></div>
+            <span class="article-category-badge">Prompts</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="meta-fire">✨ 1.9K</span>
+              <span class="meta-time">6 min</span>
+            </div>
+            <h3 class="article-title small-title" itemprop="headline">
+              <a href="#">10 prompts de ChatGPT, Claude y Gemini que te ahorran horas de trabajo</a>
+            </h3>
+            <time itemprop="datePublished" datetime="2026-05-25">25 mayo 2026</time>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     AD BANNER - TOP
+═══════════════════════════════════════════ -->
+<div class="ad-banner-wrap">
+  <div class="container">
+    <div class="ad-placeholder ad-leaderboard">
+      <span class="ad-label">Publicidad</span>
+      <!-- Google AdSense: ins class="adsbygoogle" data-ad-slot="XXXXXXXXXX" -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERRAMIENTAS IA
+═══════════════════════════════════════════ -->
+<section class="tools-section" id="herramientas">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">🛠️ DIRECTORIO</div>
+      <h2 class="section-title">Mejores <span class="gradient-text">Herramientas IA</span></h2>
+      <a href="#" class="section-link">Ver directorio completo →</a>
+    </div>
+
+    <div class="tools-filter">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="texto">Texto</button>
+      <button class="filter-btn" data-filter="imagen">Imagen</button>
+      <button class="filter-btn" data-filter="video">Video</button>
+      <button class="filter-btn" data-filter="audio">Audio</button>
+      <button class="filter-btn" data-filter="codigo">Código</button>
+      <button class="filter-btn" data-filter="negocios">Negocios</button>
+    </div>
+
+    <div class="tools-grid">
+      <div class="tool-card" data-category="texto">
+        <div class="tool-header">
+          <div class="tool-logo chatgpt-logo">GPT</div>
+          <div class="tool-info">
+            <h3 class="tool-name">ChatGPT</h3>
+            <span class="tool-company">OpenAI</span>
+          </div>
+          <div class="tool-badge free">Gratis</div>
+        </div>
+        <p class="tool-desc">El asistente de IA más popular del mundo. Ideal para redactar, analizar, codificar y automatizar tareas.</p>
+        <div class="tool-tags">
+          <span>Escritura</span><span>Código</span><span>Análisis</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.9</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Probar gratis →</a>
+        </div>
+      </div>
+
+      <div class="tool-card" data-category="texto">
+        <div class="tool-header">
+          <div class="tool-logo claude-logo">CL</div>
+          <div class="tool-info">
+            <h3 class="tool-name">Claude</h3>
+            <span class="tool-company">Anthropic</span>
+          </div>
+          <div class="tool-badge free">Gratis</div>
+        </div>
+        <p class="tool-desc">IA conversacional avanzada con razonamiento profundo. Excelente para textos largos, análisis complejos y programación.</p>
+        <div class="tool-tags">
+          <span>Análisis</span><span>Código</span><span>Redacción</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.9</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Probar gratis →</a>
+        </div>
+      </div>
+
+      <div class="tool-card" data-category="imagen">
+        <div class="tool-header">
+          <div class="tool-logo midjourney-logo">MJ</div>
+          <div class="tool-info">
+            <h3 class="tool-name">Midjourney</h3>
+            <span class="tool-company">Midjourney Inc.</span>
+          </div>
+          <div class="tool-badge paid">De pago</div>
+        </div>
+        <p class="tool-desc">El generador de imágenes con IA más potente del mercado. Crea arte fotorrealista y artístico de alta calidad.</p>
+        <div class="tool-tags">
+          <span>Imágenes</span><span>Arte</span><span>Diseño</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.8</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Ver planes →</a>
+        </div>
+      </div>
+
+      <div class="tool-card" data-category="codigo">
+        <div class="tool-header">
+          <div class="tool-logo cursor-logo">CU</div>
+          <div class="tool-info">
+            <h3 class="tool-name">Cursor</h3>
+            <span class="tool-company">Cursor AI</span>
+          </div>
+          <div class="tool-badge freemium">Freemium</div>
+        </div>
+        <p class="tool-desc">Editor de código con IA integrada. Escribe, refactoriza y depura código con asistencia de IA en tiempo real.</p>
+        <div class="tool-tags">
+          <span>Código</span><span>Desarrollo</span><span>IA</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.8</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Descargar →</a>
+        </div>
+      </div>
+
+      <div class="tool-card" data-category="video">
+        <div class="tool-header">
+          <div class="tool-logo sora-logo">SR</div>
+          <div class="tool-info">
+            <h3 class="tool-name">Sora</h3>
+            <span class="tool-company">OpenAI</span>
+          </div>
+          <div class="tool-badge paid">De pago</div>
+        </div>
+        <p class="tool-desc">Generador de videos con IA de alta calidad. Crea contenido cinematográfico a partir de texto en minutos.</p>
+        <div class="tool-tags">
+          <span>Video</span><span>Contenido</span><span>Cine</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-num">4.6</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Ver planes →</a>
+        </div>
+      </div>
+
+      <div class="tool-card" data-category="negocios">
+        <div class="tool-header">
+          <div class="tool-logo notion-logo">N</div>
+          <div class="tool-info">
+            <h3 class="tool-name">Notion AI</h3>
+            <span class="tool-company">Notion Labs</span>
+          </div>
+          <div class="tool-badge freemium">Freemium</div>
+        </div>
+        <p class="tool-desc">Organiza proyectos, notas y equipos con IA integrada. El segundo cerebro potenciado por inteligencia artificial.</p>
+        <div class="tool-tags">
+          <span>Productividad</span><span>Proyectos</span><span>Equipos</span>
+        </div>
+        <div class="tool-footer">
+          <div class="tool-rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-num">4.7</span>
+          </div>
+          <a href="#" class="btn-tool" target="_blank" rel="nofollow noopener">Probar gratis →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     GRID DE ARTÍCULOS
+═══════════════════════════════════════════ -->
+<section class="articles-section" id="tutoriales">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">📚 TUTORIALES</div>
+      <h2 class="section-title">Aprende a usar la <span class="gradient-text">IA</span></h2>
+      <a href="#" class="section-link">Ver todos →</a>
+    </div>
+
+    <div class="articles-grid-3">
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-5"></div>
+          <span class="card-cat">Tutoriales</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">Cómo usar ChatGPT como un experto: guía completa 2026</a>
+          </h3>
+          <p class="card-excerpt">Domina ChatGPT desde cero. Aprende las técnicas de prompting avanzado que usan los profesionales para obtener resultados extraordinarios.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>ChatGPT</span><span>Prompts</span></div>
+            <time datetime="2026-05-24">24 mayo</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-6"></div>
+          <span class="card-cat">Imagen IA</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">Las mejores IAs para crear imágenes increíbles gratis en 2026</a>
+          </h3>
+          <p class="card-excerpt">Comparamos los mejores generadores de imágenes con IA: Midjourney, DALL-E 3, Stable Diffusion, Adobe Firefly y más.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>Imágenes</span><span>Arte IA</span></div>
+            <time datetime="2026-05-23">23 mayo</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-7"></div>
+          <span class="card-cat">Marketing</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">La IA que está revolucionando el marketing digital en 2026</a>
+          </h3>
+          <p class="card-excerpt">Descubre cómo las empresas más exitosas usan IA para crear campañas, analizar audiencias y multiplicar sus resultados.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>Marketing</span><span>Negocios</span></div>
+            <time datetime="2026-05-22">22 mayo</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-8"></div>
+          <span class="card-cat">Estudiantes</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">Las mejores herramientas IA para estudiantes en 2026</a>
+          </h3>
+          <p class="card-excerpt">Desde resúmenes automáticos hasta asistentes de estudio, estas herramientas de IA van a transformar tu forma de aprender.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>Educación</span><span>Estudiantes</span></div>
+            <time datetime="2026-05-21">21 mayo</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-9"></div>
+          <span class="card-cat">Automatización</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">Automatiza tu negocio con IA: 7 flujos de trabajo que debes implementar ya</a>
+          </h3>
+          <p class="card-excerpt">Aprende a crear automatizaciones con Make, Zapier y agentes de IA para trabajar menos y ganar más.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>Automatización</span><span>Negocios</span></div>
+            <time datetime="2026-05-20">20 mayo</time>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card-v2" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img-wrap">
+          <div class="card-img ai-img-10"></div>
+          <span class="card-cat">Ganar con IA</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" itemprop="headline">
+            <a href="#">Cómo ganar $3,000 al mes con IA sin ser programador</a>
+          </h3>
+          <p class="card-excerpt">Métodos reales y verificados para generar ingresos usando herramientas de IA. Sin experiencia previa necesaria.</p>
+          <div class="card-footer">
+            <div class="card-tags"><span>Dinero</span><span>Freelance</span></div>
+            <time datetime="2026-05-19">19 mayo</time>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     AD SIDEBAR CONTENT WRAP
+═══════════════════════════════════════════ -->
+<section class="content-with-sidebar" id="modelos">
+  <div class="container">
+    <div class="content-sidebar-wrap">
+      <div class="main-content">
+        <div class="section-header">
+          <div class="section-label">🧠 MODELOS</div>
+          <h2 class="section-title">Noticias de <span class="gradient-text">Modelos IA</span></h2>
+        </div>
+
+        <div class="news-list">
+          <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="news-img ai-news-1"></div>
+            <div class="news-content">
+              <span class="news-cat">OpenAI</span>
+              <h3 itemprop="headline"><a href="#">GPT-5 ya está disponible: todo lo que necesitas saber sobre el modelo más avanzado de OpenAI</a></h3>
+              <p>OpenAI lanzó oficialmente GPT-5, su modelo más poderoso hasta la fecha, con capacidades de razonamiento que superan a cualquier IA anterior.</p>
+              <div class="news-meta">
+                <time datetime="2026-05-28">28 mayo 2026</time>
+                <span>·</span>
+                <span>9 min lectura</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="news-img ai-news-2"></div>
+            <div class="news-content">
+              <span class="news-cat">Google</span>
+              <h3 itemprop="headline"><a href="#">Gemini 2.5 Pro supera a todos los modelos en programación según benchmarks independientes</a></h3>
+              <p>El nuevo modelo de Google establece un nuevo récord en HumanEval, superando a GPT-4o y Claude 3.7 en tareas de codificación.</p>
+              <div class="news-meta">
+                <time datetime="2026-05-27">27 mayo 2026</time>
+                <span>·</span>
+                <span>6 min lectura</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="news-img ai-news-3"></div>
+            <div class="news-content">
+              <span class="news-cat">Anthropic</span>
+              <h3 itemprop="headline"><a href="#">Claude 4 de Anthropic: el modelo con mayor capacidad de razonamiento matemático del mercado</a></h3>
+              <p>Anthropic presenta Claude 4, su modelo más capaz, que destaca especialmente en matemáticas, ciencias y razonamiento lógico complejo.</p>
+              <div class="news-meta">
+                <time datetime="2026-05-26">26 mayo 2026</time>
+                <span>·</span>
+                <span>7 min lectura</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <!-- Ad unit -->
+        <div class="sidebar-widget ad-widget">
+          <span class="ad-label">Publicidad</span>
+          <div class="ad-placeholder ad-rect">
+            <!-- AdSense 300x250 -->
+          </div>
+        </div>
+
+        <!-- Trending widget -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">🔥 Lo más leído</h3>
+          <ol class="trending-list">
+            <li><a href="#">ChatGPT vs Claude: ¿Cuál usar en 2026?</a></li>
+            <li><a href="#">Cómo ganar dinero con IA sin experiencia</a></li>
+            <li><a href="#">Los 10 mejores prompts para productividad</a></li>
+            <li><a href="#">Midjourney v7: guía completa para principiantes</a></li>
+            <li><a href="#">Automatiza tu negocio con Make e IA</a></li>
+          </ol>
+        </div>
+
+        <!-- Newsletter widget -->
+        <div class="sidebar-widget newsletter-widget">
+          <div class="widget-icon">📬</div>
+          <h3 class="widget-title">Newsletter IA</h3>
+          <p>Recibe las mejores noticias y herramientas de IA cada semana. Gratis.</p>
+          <input type="email" placeholder="tu@email.com" class="widget-input">
+          <button class="widget-btn">Suscribirme gratis</button>
+        </div>
+
+        <!-- Affiliate widget -->
+        <div class="sidebar-widget affiliate-widget">
+          <div class="aff-label">⭐ RECOMENDADO</div>
+          <div class="aff-logo">ChatGPT Plus</div>
+          <p>Accede a GPT-4o, GPT-5, análisis de datos y más. El plan más popular para profesionales.</p>
+          <div class="aff-price">$20<span>/mes</span></div>
+          <a href="#" class="btn-aff" target="_blank" rel="nofollow noopener">Probar 30 días gratis</a>
+        </div>
+
+        <!-- Ad unit 2 -->
+        <div class="sidebar-widget ad-widget">
+          <span class="ad-label">Publicidad</span>
+          <div class="ad-placeholder ad-rect">
+            <!-- AdSense 300x250 -->
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     COMPARATIVA DE MODELOS
+═══════════════════════════════════════════ -->
+<section class="comparison-section" id="chatgpt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">📊 COMPARATIVA</div>
+      <h2 class="section-title">ChatGPT vs Claude vs <span class="gradient-text">Gemini</span></h2>
+      <p class="section-desc">Elige el modelo de IA correcto según tu caso de uso</p>
+    </div>
+
+    <div class="comparison-table-wrap">
+      <table class="comparison-table" role="table">
+        <thead>
+          <tr>
+            <th scope="col">Característica</th>
+            <th scope="col" class="col-chatgpt">
+              <div class="th-logo chatgpt-logo-sm">GPT</div>
+              ChatGPT
+            </th>
+            <th scope="col" class="col-claude">
+              <div class="th-logo claude-logo-sm">CL</div>
+              Claude
+            </th>
+            <th scope="col" class="col-gemini">
+              <div class="th-logo gemini-logo-sm">G</div>
+              Gemini
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Modelo gratuito</td>
+            <td class="check">GPT-4o mini ✓</td>
+            <td class="check">Claude 3.5 Haiku ✓</td>
+            <td class="check">Gemini 1.5 Flash ✓</td>
+          </tr>
+          <tr>
+            <td>Razonamiento</td>
+            <td class="rating-cell"><span class="r-bar" style="--w:92%">92/100</span></td>
+            <td class="rating-cell"><span class="r-bar claude-bar" style="--w:95%">95/100</span></td>
+            <td class="rating-cell"><span class="r-bar gemini-bar" style="--w:90%">90/100</span></td>
+          </tr>
+          <tr>
+            <td>Programación</td>
+            <td class="rating-cell"><span class="r-bar" style="--w:90%">90/100</span></td>
+            <td class="rating-cell"><span class="r-bar claude-bar" style="--w:93%">93/100</span></td>
+            <td class="rating-cell"><span class="r-bar gemini-bar" style="--w:94%">94/100</span></td>
+          </tr>
+          <tr>
+            <td>Escritura creativa</td>
+            <td class="rating-cell"><span class="r-bar" style="--w:88%">88/100</span></td>
+            <td class="rating-cell"><span class="r-bar claude-bar" style="--w:96%">96/100</span></td>
+            <td class="rating-cell"><span class="r-bar gemini-bar" style="--w:85%">85/100</span></td>
+          </tr>
+          <tr>
+            <td>Análisis de datos</td>
+            <td class="rating-cell"><span class="r-bar" style="--w:95%">95/100</span></td>
+            <td class="rating-cell"><span class="r-bar claude-bar" style="--w:92%">92/100</span></td>
+            <td class="rating-cell"><span class="r-bar gemini-bar" style="--w:91%">91/100</span></td>
+          </tr>
+          <tr>
+            <td>Precio (plan Pro)</td>
+            <td>$20/mes</td>
+            <td>$20/mes</td>
+            <td>$19.99/mes</td>
+          </tr>
+          <tr>
+            <td>Mejor para</td>
+            <td>Todo uso general</td>
+            <td>Textos largos y código</td>
+            <td>Búsqueda y datos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROMPTS SECTION
+═══════════════════════════════════════════ -->
+<section class="prompts-section" id="prompts">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">✨ PROMPTS</div>
+      <h2 class="section-title">Prompts que <span class="gradient-text">transforman</span> tu trabajo</h2>
+    </div>
+
+    <div class="prompts-grid">
+      <div class="prompt-card">
+        <div class="prompt-cat">📝 Escritura</div>
+        <div class="prompt-text">"Actúa como un copywriter experto y escribe un email de ventas para [producto] dirigido a [audiencia]. Usa la fórmula AIDA y añade 3 variaciones del asunto."</div>
+        <div class="prompt-footer">
+          <span class="prompt-model">ChatGPT / Claude</span>
+          <button class="copy-btn" onclick="copyPrompt(this)">📋 Copiar</button>
+        </div>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-cat">📊 Análisis</div>
+        <div class="prompt-text">"Analiza este conjunto de datos y dame: 1) las 3 tendencias principales, 2) anomalías detectadas, 3) recomendaciones accionables con métricas específicas."</div>
+        <div class="prompt-footer">
+          <span class="prompt-model">ChatGPT / Gemini</span>
+          <button class="copy-btn" onclick="copyPrompt(this)">📋 Copiar</button>
+        </div>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-cat">💼 Negocios</div>
+        <div class="prompt-text">"Crea un plan de negocio ejecutivo para [idea de negocio] incluyendo: propuesta de valor, modelo de monetización, análisis de competencia y roadmap de 90 días."</div>
+        <div class="prompt-footer">
+          <span class="prompt-model">Claude / ChatGPT</span>
+          <button class="copy-btn" onclick="copyPrompt(this)">📋 Copiar</button>
+        </div>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-cat">🎨 Imágenes</div>
+        <div class="prompt-text">"[descripción del objeto], cinematic lighting, ultra-detailed, 8K resolution, professional photography, shot on Sony A7R IV, f/1.4 aperture, golden hour"</div>
+        <div class="prompt-footer">
+          <span class="prompt-model">Midjourney / DALL-E</span>
+          <button class="copy-btn" onclick="copyPrompt(this)">📋 Copiar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompts-cta">
+      <a href="#" class="btn-primary">Ver los 50 mejores prompts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     NEWSLETTER
+═══════════════════════════════════════════ -->
+<section class="newsletter-section" id="newsletter">
+  <div class="container">
+    <div class="newsletter-card">
+      <div class="newsletter-glow"></div>
+      <div class="newsletter-content">
+        <div class="newsletter-icon">🚀</div>
+        <h2 class="newsletter-title">Únete a <span class="gradient-text">+50,000 profesionales</span></h2>
+        <p class="newsletter-subtitle">Recibe cada semana las mejores herramientas, noticias y tutoriales de IA directamente en tu inbox. Sin spam, solo valor.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Tu email profesional" class="newsletter-input" id="newsletterEmail">
+          <button class="newsletter-btn" onclick="subscribeNewsletter()">
+            Suscribirme gratis
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+        <p class="newsletter-note">✅ Gratis para siempre · ✅ Sin spam · ✅ Cancela cuando quieras</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     AFILIADOS / RECOMENDACIONES
+═══════════════════════════════════════════ -->
+<section class="affiliate-section" id="negocios">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">💎 RECOMENDADO</div>
+      <h2 class="section-title">Herramientas <span class="gradient-text">premium</span> que recomendamos</h2>
+      <p class="section-desc">Selección verificada por el equipo Código IA. Algunos enlaces son de afiliados.</p>
+    </div>
+
+    <div class="affiliate-grid">
+      <div class="aff-card featured-aff">
+        <div class="aff-badge-top">⭐ #1 MÁS RECOMENDADO</div>
+        <div class="aff-header">
+          <div class="aff-logo-lg chatgpt-logo">GPT+</div>
+          <div>
+            <h3 class="aff-name">ChatGPT Plus</h3>
+            <div class="aff-stars">★★★★★ <span>4.9/5</span></div>
+          </div>
+        </div>
+        <ul class="aff-features">
+          <li>✓ Acceso a GPT-4o y GPT-5</li>
+          <li>✓ Análisis de imágenes y documentos</li>
+          <li>✓ Generación de imágenes DALL-E 3</li>
+          <li>✓ Plugins y acceso a internet</li>
+          <li>✓ GPTs personalizados</li>
+        </ul>
+        <div class="aff-pricing">
+          <span class="aff-price">$20</span><span class="aff-period">/mes</span>
+        </div>
+        <a href="#" class="btn-aff-large" target="_blank" rel="nofollow noopener">Empezar prueba gratuita →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-header">
+          <div class="aff-logo-lg claude-logo">CL</div>
+          <div>
+            <h3 class="aff-name">Claude Pro</h3>
+            <div class="aff-stars">★★★★★ <span>4.9/5</span></div>
+          </div>
+        </div>
+        <ul class="aff-features">
+          <li>✓ Claude 3.7 Sonnet y Opus</li>
+          <li>✓ Análisis de documentos extensos</li>
+          <li>✓ Proyectos y memoria persistente</li>
+          <li>✓ Uso prioritario siempre</li>
+        </ul>
+        <div class="aff-pricing">
+          <span class="aff-price">$20</span><span class="aff-period">/mes</span>
+        </div>
+        <a href="#" class="btn-aff-medium" target="_blank" rel="nofollow noopener">Ver plan Pro →</a>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-header">
+          <div class="aff-logo-lg midjourney-logo">MJ</div>
+          <div>
+            <h3 class="aff-name">Midjourney Pro</h3>
+            <div class="aff-stars">★★★★★ <span>4.8/5</span></div>
+          </div>
+        </div>
+        <ul class="aff-features">
+          <li>✓ Generación de imágenes 4K</li>
+          <li>✓ Uso comercial incluido</li>
+          <li>✓ Modo stealth (privacidad)</li>
+          <li>✓ GPU ilimitada (plan máx.)</li>
+        </ul>
+        <div class="aff-pricing">
+          <span class="aff-price">$30</span><span class="aff-period">/mes</span>
+        </div>
+        <a href="#" class="btn-aff-medium" target="_blank" rel="nofollow noopener">Ver planes →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo footer-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="url(#fLogoGrad)" stroke-width="2"/>
+              <path d="M14 16C14 14.9 14.9 14 16 14H20C22.2 14 24 15.8 24 18C24 20.2 22.2 22 20 22H16V26" stroke="url(#fLogoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="26" cy="24" r="2.5" fill="url(#fLogoGrad2)"/>
+              <defs>
+                <linearGradient id="fLogoGrad" x1="0" y1="0" x2="40" y2="40">
+                  <stop offset="0%" stop-color="#00d4ff"/>
+                  <stop offset="100%" stop-color="#7c3aed"/>
+                </linearGradient>
+                <linearGradient id="fLogoGrad2" x1="0" y1="0" x2="40" y2="40">
+                  <stop offset="0%" stop-color="#00d4ff"/>
+                  <stop offset="100%" stop-color="#7c3aed"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span>
+        </a>
+        <p class="footer-desc">El portal #1 en español sobre Inteligencia Artificial. Herramientas, noticias y tutoriales para México, España, Argentina y toda América Latina.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/codigo.iaoficial" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" stroke="none" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Categorías</h4>
+        <ul class="footer-links">
+          <li><a href="#">Herramientas IA</a></li>
+          <li><a href="#">Noticias IA</a></li>
+          <li><a href="#">ChatGPT</a></li>
+          <li><a href="#">Modelos IA</a></li>
+          <li><a href="#">Automatización</a></li>
+          <li><a href="#">Prompts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Recursos</h4>
+        <ul class="footer-links">
+          <li><a href="#">Directorio de Herramientas</a></li>
+          <li><a href="#">Comparativas</a></li>
+          <li><a href="#">Guías para principiantes</a></li>
+          <li><a href="#">Tutoriales avanzados</a></li>
+          <li><a href="#">Ganar con IA</a></li>
+          <li><a href="#">IA para estudiantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Divulgación de afiliados</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Código IA. Todos los derechos reservados.</p>
+      <p class="footer-disclaimer">Algunos enlaces en este sitio son de afiliados. Código IA puede recibir una comisión si realizas una compra a través de ellos, sin costo adicional para ti.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<!-- Toast notification -->
+<div class="toast" id="toast"></div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
