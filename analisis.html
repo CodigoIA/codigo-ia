@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análisis profundos de las mejores herramientas de IA, hosting, SEO y marketing. Descubre si cada herramienta vale la pena antes de comprar.">
+  <meta property="og:title" content="Análisis de Herramientas – Código IA 2026">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  <title>Análisis de Herramientas 2026 | Código IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .analisis-page { padding: calc(var(--nav-height) + 34px + 60px) 0 80px; }
+    .analisis-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .analisis-hero { text-align: center; margin-bottom: 56px; }
+    .analisis-hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem,4vw,2.8rem); font-weight: 900; margin-bottom: 16px; }
+    .analisis-hero p { font-size: 1rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto; line-height: 1.7; }
+
+    .analisis-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+
+    .analisis-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .analisis-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+    .analisis-card.featured {
+      grid-column: span 2;
+      flex-direction: row;
+    }
+
+    .analisis-card-img {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .analisis-card.featured .analisis-card-img {
+      width: 380px;
+      height: auto;
+    }
+    .analisis-card-img-inner {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .analisis-card-img-inner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(0,212,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .analisis-card-logo {
+      width: 72px; height: 72px;
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1rem; font-weight: 900;
+      color: white; position: relative; z-index: 1;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .analisis-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(8,14,26,0.85) 0%, transparent 60%);
+    }
+    .analisis-cat-badge {
+      position: absolute; top: 16px; left: 16px;
+      padding: 5px 12px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.2);
+      color: var(--cyan); font-family: var(--font-ui);
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+      border-radius: 100px; backdrop-filter: blur(8px);
+    }
+
+    .analisis-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .analisis-card-title {
+      font-family: var(--font-ui); font-weight: 800;
+      font-size: 1.15rem; line-height: 1.3;
+      margin-bottom: 10px; color: var(--text-primary);
+    }
+    .analisis-card.featured .analisis-card-title { font-size: 1.5rem; }
+    .analisis-card-desc {
+      font-size: 0.875rem; color: var(--text-secondary);
+      line-height: 1.6; margin-bottom: 16px; flex: 1;
+    }
+    .analisis-card-meta {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .analisis-tag {
+      padding: 4px 10px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 100px; font-size: 0.72rem;
+      color: var(--text-muted); font-family: var(--font-ui);
+    }
+    .analisis-read-time { font-size: 0.75rem; color: var(--text-muted); }
+
+    .btn-analisis {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 20px;
+      background: var(--grad-brand); color: white;
+      font-family: var(--font-ui); font-weight: 700; font-size: 0.9rem;
+      border-radius: 12px; transition: all 0.3s;
+      box-shadow: 0 0 20px rgba(0,212,255,0.15);
+    }
+    .btn-analisis:hover { transform: translateY(-2px); box-shadow: var(--shadow-neon); }
+
+    .analisis-divider {
+      text-align: center; margin: 48px 0 36px;
+      position: relative;
+    }
+    .analisis-divider::before {
+      content: ''; position: absolute;
+      top: 50%; left: 0; right: 0; height: 1px;
+      background: var(--border);
+    }
+    .analisis-divider span {
+      position: relative; background: var(--bg-void);
+      padding: 0 16px; font-family: var(--font-display);
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em;
+      color: var(--text-muted);
+    }
+
+    .coming-soon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .coming-card {
+      background: var(--bg-card); border: 1px dashed rgba(255,255,255,0.06);
+      border-radius: 16px; padding: 24px; text-align: center;
+      opacity: 0.5;
+    }
+    .coming-card-icon { font-size: 2rem; margin-bottom: 10px; }
+    .coming-card h3 { font-family: var(--font-ui); font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; color: var(--text-primary); }
+    .coming-card p { font-size: 0.78rem; color: var(--text-muted); }
+    .coming-badge { display: inline-block; padding: 3px 10px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 100px; font-size: 0.65rem; color: var(--text-muted); font-family: var(--font-display); letter-spacing: 0.1em; margin-top: 10px; }
+
+    @media (max-width: 768px) {
+      .analisis-grid { grid-template-columns: 1fr; }
+      .analisis-card.featured { flex-direction: column; grid-column: span 1; }
+      .analisis-card.featured .analisis-card-img { width: 100%; height: 200px; }
+      .coming-soon-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#lg)" stroke-width="2"/><path d="M14 16C14 14.9 14.9 14 16 14H20C22.2 14 24 15.8 24 18C24 20.2 22.2 22 20 22H16V26" stroke="url(#lg)" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="24" r="2.5" fill="url(#lg2)"/><defs><linearGradient id="lg" x1="0" y1="0" x2="40" y2="40"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="40" y2="40"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg></div>
+      <span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="herramientas-recomendadas.html" class="nav-link" style="color:var(--cyan)">⭐ Recomendadas</a>
+      <a href="analisis.html" class="nav-link" style="color:var(--cyan)">📋 Análisis</a>
+      <a href="index.html#herramientas" class="nav-link">Herramientas</a>
+      <a href="index.html#noticias" class="nav-link">Noticias</a>
+      <a href="index.html#prompts" class="nav-link">Prompts</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html#newsletter" class="btn-cta">Suscríbete</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="news-ticker">
+  <div class="ticker-label">🔴 EN VIVO</div>
+  <div class="ticker-track"><div class="ticker-content">
+    <span>GPT-5.5 Instant disponible para todos los usuarios de ChatGPT Plus</span><span class="ticker-sep">◆</span>
+    <span>Google I/O 2026: Gemini lanza agente Spark y modelo Gemini Omni</span><span class="ticker-sep">◆</span>
+    <span>Hostinger: el hosting más recomendado para hispanos en 2026</span><span class="ticker-sep">◆</span>
+    <span>GPT-5.5 Instant disponible para todos los usuarios de ChatGPT Plus</span><span class="ticker-sep">◆</span>
+  </div></div>
+</div>
+
+<main class="analisis-page">
+  <div class="analisis-container">
+
+    <div class="analisis-hero">
+      <div class="section-label" style="display:inline-block;margin-bottom:16px">📋 ANÁLISIS CÓDIGO IA</div>
+      <h1>Análisis <span class="gradient-text">profundos</span> de herramientas</h1>
+      <p>Exploramos cada herramienta a fondo — qué es, cómo funciona, casos de uso reales y si realmente vale la pena. Sin rodeos.</p>
+    </div>
+
+    <!-- Articles grid -->
+    <div class="analisis-grid">
+
+      <!-- Hostinger - FEATURED -->
+      <div class="analisis-card featured">
+        <div class="analisis-card-img">
+          <div class="analisis-card-img-inner" style="background:linear-gradient(135deg,#1a0d35 0%,#0d1535 50%,#0a0a1a 100%)">
+            <div class="analisis-card-logo" style="background:linear-gradient(135deg,#673de6,#7b52f0)">H</div>
+            <div class="analisis-card-overlay"></div>
+          </div>
+          <span class="analisis-cat-badge">🌐 Hosting</span>
+        </div>
+        <div class="analisis-card-body">
+          <h2 class="analisis-card-title">Hostinger 2026: ¿El mejor hosting para tu proyecto de IA o blog en español?</h2>
+          <p class="analisis-card-desc">Analizamos Hostinger a fondo: velocidad, soporte, precios reales, herramientas de IA integradas y por qué es la opción más inteligente para publicar tu web en 2026. Guía paso a paso incluida.</p>
+          <div class="analisis-card-meta">
+            <span class="analisis-tag">Hosting</span>
+            <span class="analisis-tag">Principiantes</span>
+            <span class="analisis-tag">Guía completa</span>
+            <span class="analisis-read-time">⏱ 10 min de lectura</span>
+          </div>
+          <a href="articulo-hostinger-guia-completa.html" class="btn-analisis">
+            Leer análisis completo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Jasper AI -->
+      <div class="analisis-card">
+        <div class="analisis-card-img">
+          <div class="analisis-card-img-inner" style="background:linear-gradient(135deg,#1a0d28 0%,#2d1050 100%)">
+            <div class="analisis-card-logo" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">J</div>
+            <div class="analisis-card-overlay"></div>
+          </div>
+          <span class="analisis-cat-badge">✍️ IA Escritura</span>
+        </div>
+        <div class="analisis-card-body">
+          <h2 class="analisis-card-title">Jasper AI: ¿Vale la pena para crear contenido con IA en 2026?</h2>
+          <p class="analisis-card-desc">La IA de copywriting más usada por marketers. Analizamos sus plantillas, precios, comparativa con ChatGPT y para quién tiene sentido pagarlo.</p>
+          <div class="analisis-card-meta">
+            <span class="analisis-tag">Copywriting</span>
+            <span class="analisis-tag">Marketing</span>
+            <span class="analisis-read-time">⏱ 9 min</span>
+          </div>
+          <a href="articulo-jasper-ai-review.html" class="btn-analisis">
+            Leer análisis
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Semrush -->
+      <div class="analisis-card">
+        <div class="analisis-card-img">
+          <div class="analisis-card-img-inner" style="background:linear-gradient(135deg,#1a0800 0%,#2a1000 100%)">
+            <div class="analisis-card-logo" style="background:linear-gradient(135deg,#ff6b35,#f7931e);font-size:0.7rem">SEM</div>
+            <div class="analisis-card-overlay"></div>
+          </div>
+          <span class="analisis-cat-badge">📊 SEO</span>
+        </div>
+        <div class="analisis-card-body">
+          <h2 class="analisis-card-title">Semrush 2026: La herramienta SEO #1 del mundo, ¿realmente necesitas pagarla?</h2>
+          <p class="analisis-card-desc">Semrush es el estándar de la industria SEO. Analizamos si vale los $139/mes, qué funciones realmente usas y cuándo tiene sentido invertir en ella.</p>
+          <div class="analisis-card-meta">
+            <span class="analisis-tag">SEO</span>
+            <span class="analisis-tag">Keywords</span>
+            <span class="analisis-read-time">⏱ 9 min</span>
+          </div>
+          <a href="articulo-semrush-review.html" class="btn-analisis">
+            Leer análisis
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- HubSpot -->
+      <div class="analisis-card">
+        <div class="analisis-card-img">
+          <div class="analisis-card-img-inner" style="background:linear-gradient(135deg,#1a0800 0%,#200800 100%)">
+            <div class="analisis-card-logo" style="background:linear-gradient(135deg,#ff7a59,#f05733);font-size:0.7rem">HUB</div>
+            <div class="analisis-card-overlay"></div>
+          </div>
+          <span class="analisis-cat-badge">📢 CRM</span>
+        </div>
+        <div class="analisis-card-body">
+          <h2 class="analisis-card-title">HubSpot 2026: El CRM gratuito con IA que puede reemplazar 5 herramientas</h2>
+          <p class="analisis-card-desc">HubSpot tiene un plan gratuito increíblemente completo. Analizamos qué incluye, cuándo vale la pena pagar y cómo usarlo para automatizar tu negocio con IA.</p>
+          <div class="analisis-card-meta">
+            <span class="analisis-tag">CRM</span>
+            <span class="analisis-tag">Marketing</span>
+            <span class="analisis-read-time">⏱ 8 min</span>
+          </div>
+          <a href="articulo-hubspot-review.html" class="btn-analisis">
+            Leer análisis
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Notion AI -->
+      <div class="analisis-card">
+        <div class="analisis-card-img">
+          <div class="analisis-card-img-inner" style="background:linear-gradient(135deg,#111111 0%,#1a1a2e 100%)">
+            <div class="analisis-card-logo notion-logo" style="font-size:1.5rem;width:72px;height:72px;border-radius:20px">N</div>
+            <div class="analisis-card-overlay"></div>
+          </div>
+          <span class="analisis-cat-badge">⚡ Productividad</span>
+        </div>
+        <div class="analisis-card-body">
+          <h2 class="analisis-card-title">Notion AI 2026: ¿El segundo cerebro con IA más poderoso del mercado?</h2>
+          <p class="analisis-card-desc">Notion integró IA en su plataforma y el resultado es impresionante. Analizamos si vale la pena el plan de pago y cómo usarlo para máxima productividad.</p>
+          <div class="analisis-card-meta">
+            <span class="analisis-tag">Productividad</span>
+            <span class="analisis-tag">Notas</span>
+            <span class="analisis-read-time">⏱ 8 min</span>
+          </div>
+          <a href="articulo-notion-ai-review.html" class="btn-analisis">
+            Leer análisis
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Coming soon -->
+    <div class="analisis-divider"><span>PRÓXIMAMENTE</span></div>
+
+    <div class="coming-soon-grid">
+      <div class="coming-card">
+        <div class="coming-card-icon">🎨</div>
+        <h3>Midjourney v7</h3>
+        <p>¿Vale la pena para crear imágenes con IA en 2026?</p>
+        <div class="coming-badge">EN PREPARACIÓN</div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-card-icon">💻</div>
+        <h3>Cursor AI</h3>
+        <p>El editor de código con IA más potente del mercado.</p>
+        <div class="coming-badge">EN PREPARACIÓN</div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-card-icon">🤖</div>
+        <h3>ChatGPT vs Claude</h3>
+        <p>Comparativa definitiva: ¿cuál pagar en 2026?</p>
+        <div class="coming-badge">EN PREPARACIÓN</div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div style="background:linear-gradient(135deg,rgba(0,212,255,0.05),rgba(124,58,237,0.08));border:1px solid rgba(0,212,255,0.15);border-radius:20px;padding:48px;text-align:center;margin-top:56px">
+      <div style="font-size:2.5rem;margin-bottom:12px">📬</div>
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:12px">Recibe nuevos <span class="gradient-text">análisis</span> cada semana</h2>
+      <p style="color:var(--text-secondary);font-size:0.9rem;max-width:460px;margin:0 auto 24px">Te avisamos cuando publiquemos un nuevo análisis. Sin spam, solo contenido de valor.</p>
+      <div class="newsletter-form" style="max-width:460px;margin:0 auto">
+        <input type="email" placeholder="Tu email profesional" class="newsletter-input" id="analisisEmail">
+        <button class="newsletter-btn" onclick="subscribeAnalisis()">Suscribirme gratis →</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0;flex-direction:row;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <a href="index.html" class="nav-logo"><span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span></a>
+      <p>© 2026 Código IA. Todos los derechos reservados.</p>
+      <div style="display:flex;gap:16px;font-size:0.8rem">
+        <a href="privacidad.html" style="color:var(--text-muted)">Privacidad</a>
+        <a href="sobre-nosotros.html" style="color:var(--text-muted)">Sobre nosotros</a>
+        <a href="contacto.html" style="color:var(--text-muted)">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+<div class="toast" id="toast"></div>
+<script src="scripts/main.js"></script>
+<script>
+window.subscribeAnalisis = function() {
+  const e = document.getElementById('analisisEmail')?.value;
+  if (!e || !e.includes('@')) return;
+  const t = document.getElementById('toast');
+  t.textContent = '🎉 ¡Suscrito! Te avisamos con cada nuevo análisis.';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+  document.getElementById('analisisEmail').value = '';
+};
+</script>
+</body>
+</html>
