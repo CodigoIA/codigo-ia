@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía completa para publicar tu sitio web con Hostinger en 2026. Desde crear tu web hasta tenerla en línea en menos de 30 minutos. El hosting #1 para hispanos.">
+  <meta property="og:title" content="Cómo publicar tu sitio web con Hostinger en 2026 – Guía paso a paso | Código IA">
+  <meta property="og:description" content="Aprende a publicar tu sitio web con Hostinger desde cero. El hosting más barato y confiable para México, España y América Latina.">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-05-28">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Cómo publicar tu sitio web con Hostinger en 2026 – Guía completa | Código IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/article.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Cómo publicar tu sitio web con Hostinger en 2026","datePublished":"2026-05-28","author":{"@type":"Organization","name":"Código IA"},"publisher":{"@type":"Organization","name":"Código IA","url":"https://codigoia.github.io/codigo-ia/"}}
+  </script>
+  <style>
+    /* Hostinger article specific styles */
+    .hostinger-hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, rgba(103,61,230,0.15), rgba(123,82,240,0.1));
+      border: 1px solid rgba(103,61,230,0.3);
+      border-radius: 100px;
+      font-family: var(--font-ui); font-weight: 700; font-size: 0.85rem;
+      color: #a78bfa; margin-bottom: 20px;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 20px 0;
+      position: relative;
+      transition: all 0.3s;
+    }
+    .step-card:hover { border-color: var(--border-hover); }
+    .step-card::before {
+      content: attr(data-step);
+      position: absolute;
+      top: -14px; left: 24px;
+      background: var(--grad-brand);
+      color: white;
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.1em;
+    }
+    .step-card h3 {
+      font-family: var(--font-ui);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .step-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .plan-comparison {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .plan-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .plan-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+    .plan-card.popular {
+      border-color: rgba(103,61,230,0.4);
+      background: linear-gradient(135deg, var(--bg-card), rgba(103,61,230,0.05));
+    }
+    .plan-card.popular::before {
+      content: '⭐ MÁS POPULAR';
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg,#673de6,#7b52f0);
+      color: white; font-family: var(--font-display);
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
+      padding: 4px 14px; border-radius: 100px; white-space: nowrap;
+    }
+    .plan-name { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; letter-spacing: 0.05em; }
+    .plan-price { font-family: var(--font-display); font-size: 2.2rem; font-weight: 900; background: var(--grad-brand); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .plan-period { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px; }
+    .plan-features { list-style: none; text-align: left; margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .plan-features li { font-size: 0.82rem; color: var(--text-secondary); padding-left: 18px; position: relative; }
+    .plan-features li::before { content: '✓'; position: absolute; left: 0; color: #673de6; font-weight: 700; }
+    .btn-hostinger {
+      display: block; text-align: center;
+      padding: 12px; background: linear-gradient(135deg,#673de6,#7b52f0);
+      color: white; font-family: var(--font-ui); font-weight: 700;
+      font-size: 0.9rem; border-radius: 10px; transition: all 0.3s;
+      box-shadow: 0 0 20px rgba(103,61,230,0.3);
+    }
+    .btn-hostinger:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(103,61,230,0.5); }
+    .hostinger-cta-box {
+      background: linear-gradient(135deg, rgba(103,61,230,0.1), rgba(123,82,240,0.05));
+      border: 1px solid rgba(103,61,230,0.25);
+      border-radius: 20px; padding: 40px;
+      text-align: center; margin: 36px 0;
+      position: relative; overflow: hidden;
+    }
+    .hostinger-cta-box::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg,#673de6,#7b52f0);
+    }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+    .pros, .cons { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+    .pros { border-left: 3px solid #22c55e; }
+    .cons { border-left: 3px solid #f59e0b; }
+    .pros h4 { color: #22c55e; font-family: var(--font-ui); font-weight: 700; margin-bottom: 12px; }
+    .cons h4 { color: #f59e0b; font-family: var(--font-ui); font-weight: 700; margin-bottom: 12px; }
+    .pros li, .cons li { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px; list-style: none; padding-left: 16px; position: relative; }
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: #22c55e; font-weight: 700; }
+    .cons li::before { content: '⚠'; position: absolute; left: 0; color: #f59e0b; }
+    @media (max-width: 768px) {
+      .plan-comparison { grid-template-columns: 1fr; }
+      .pros-cons { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#lg)" stroke-width="2"/><path d="M14 16C14 14.9 14.9 14 16 14H20C22.2 14 24 15.8 24 18C24 20.2 22.2 22 20 22H16V26" stroke="url(#lg)" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="24" r="2.5" fill="url(#lg2)"/><defs><linearGradient id="lg" x1="0" y1="0" x2="40" y2="40"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="40" y2="40"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg></div>
+      <span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#herramientas" class="nav-link">Herramientas</a>
+      <a href="index.html#noticias" class="nav-link">Noticias</a>
+      <a href="index.html#tutoriales" class="nav-link">Tutoriales</a>
+      <a href="index.html#prompts" class="nav-link">Prompts</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html#newsletter" class="btn-cta">Suscríbete</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="news-ticker">
+  <div class="ticker-label">🔴 EN VIVO</div>
+  <div class="ticker-track"><div class="ticker-content">
+    <span>Hostinger: el hosting #1 más recomendado para hispanos en 2026</span><span class="ticker-sep">◆</span>
+    <span>GPT-5.5 Instant ya disponible para todos los usuarios de ChatGPT Plus</span><span class="ticker-sep">◆</span>
+    <span>Hostinger el hosting #1 más recomendado para hispanos en 2026</span><span class="ticker-sep">◆</span>
+  </div></div>
+</div>
+
+<main class="article-main">
+  <div class="article-container">
+    <nav class="breadcrumb"><ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Herramientas IA</a></li>
+      <li>Cómo publicar tu web con Hostinger</li>
+    </ol></nav>
+
+    <div class="article-layout">
+      <article class="article-content-main">
+
+        <header class="article-header">
+          <div class="hostinger-hero-badge">
+            🌐 Patrocinado por Hostinger · Enlace de afiliado
+          </div>
+          <div class="article-cats">
+            <span class="a-cat">🌐 Hosting</span>
+            <span class="a-cat" style="background:rgba(103,61,230,0.1);border-color:rgba(103,61,230,0.2);color:#a78bfa">💎 Guía completa</span>
+          </div>
+          <h1 class="article-main-title">Cómo publicar tu sitio web con Hostinger en 2026: guía paso a paso para principiantes</h1>
+          <p class="article-lead">Creaste tu web con IA, tienes el diseño listo, los artículos escritos… y ahora, ¿cómo lo publicas en internet? En menos de 30 minutos tu sitio puede estar en línea con Hostinger, el hosting más barato y confiable para hispanos.</p>
+          <div class="article-byline">
+            <div class="author-avatar-lg" style="background:linear-gradient(135deg,#673de6,#7b52f0)">CI</div>
+            <div>
+              <span class="author-name">Equipo Código IA</span>
+              <div class="article-meta-bar">
+                <time datetime="2026-05-28">28 mayo 2026</time><span>·</span>
+                <span>10 min de lectura</span><span>·</span>
+                <span class="read-count">Guía actualizada</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero CTA box - affiliate -->
+        <div class="hostinger-cta-box">
+          <div style="font-size:3rem;margin-bottom:12px">🚀</div>
+          <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:10px">Hostinger — El hosting #1 para hispanos</h2>
+          <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:8px">Desde <strong style="color:#a78bfa">$1.99/mes</strong> · Dominio gratis · SSL gratis · Soporte 24/7 en español</p>
+          <p style="color:var(--text-muted);font-size:0.8rem;margin-bottom:24px">Más de 3.4 millones de clientes en todo el mundo · Calificación 4.7/5 en Trustpilot</p>
+          <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" style="max-width:320px;margin:0 auto;display:block" target="_blank" rel="nofollow noopener">
+            🔥 Ver planes con hasta 81% de descuento →
+          </a>
+          <p style="font-size:0.72rem;color:var(--text-muted);margin-top:12px">* Enlace de afiliado. Obtenemos una comisión sin costo extra para ti.</p>
+        </div>
+
+        <div class="ad-article ad-top"><span class="ad-label">Publicidad</span></div>
+
+        <nav class="toc-wrap">
+          <div class="toc-header">📋 Tabla de contenidos</div>
+          <ol class="toc-list">
+            <li><a href="#por-que">¿Por qué necesitas un hosting para tu web?</a></li>
+            <li><a href="#por-que-hostinger">¿Por qué Hostinger y no otro?</a></li>
+            <li><a href="#planes">Planes y precios de Hostinger 2026</a></li>
+            <li><a href="#paso-a-paso">Guía paso a paso: publicar tu web</a></li>
+            <li><a href="#ia-hostinger">Hostinger + IA: la combinación perfecta</a></li>
+            <li><a href="#pros-cons">Pros y contras honestos</a></li>
+            <li><a href="#conclusion">¿Vale la pena Hostinger?</a></li>
+          </ol>
+        </nav>
+
+        <div class="article-body">
+
+          <section id="por-que">
+            <h2>¿Por qué necesitas un hosting para tu sitio web?</h2>
+            <p>Imagina que tu sitio web es una tienda física. El diseño, el logo y los productos son el contenido. Pero necesitas un local donde instalarla para que la gente pueda entrar, ¿verdad? El <strong>hosting</strong> es ese local — el espacio en internet donde vive tu página.</p>
+            <p>Sin hosting, tu web solo existe en tu computadora. Para que cualquier persona en México, España, Argentina o los Estados Unidos pueda acceder a ella, necesitas subirla a un servidor conectado a internet 24 horas al día, los 7 días de la semana.</p>
+            <p>Y el <strong>dominio</strong> (como <em>codigoia.com</em>) es la dirección de ese local. El letrero que la gente escribe en el navegador para encontrarte.</p>
+            <div class="callout callout-info">💡 <strong>Resumen simple:</strong> Hosting = el espacio donde vive tu web. Dominio = la dirección para encontrarla. Los dos juntos = tu presencia en internet.</div>
+          </section>
+
+          <section id="por-que-hostinger">
+            <h2>¿Por qué Hostinger y no otro hosting?</h2>
+            <p>Existen decenas de empresas de hosting en el mercado: GoDaddy, Bluehost, SiteGround, HostGator… Entonces, ¿por qué recomendamos Hostinger específicamente para la comunidad hispana?</p>
+
+            <h3>1. El más barato sin sacrificar calidad</h3>
+            <p>Hostinger ofrece planes desde <strong>$1.99/mes</strong>, los más baratos del mercado. Y no es que sean baratos porque sean malos — es que optimizaron sus servidores para ofrecer más por menos. GoDaddy cobra $9.99/mes por características similares. Bluehost desde $8.99/mes. Hostinger te da lo mismo por menos de $2.</p>
+
+            <h3>2. Soporte 24/7 en español</h3>
+            <p>Esto es clave para la comunidad hispana. Hostinger tiene soporte en chat en español disponible a cualquier hora. Si tienes un problema a las 3am en México o en Madrid, hay alguien que te responde en tu idioma.</p>
+
+            <h3>3. SSL gratis + dominio gratis</h3>
+            <p>El certificado SSL (el candado de seguridad que aparece en el navegador) es gratis para siempre. Y en la mayoría de planes, el dominio (.com, .net, .org) es gratis el primer año — un ahorro de $15 adicionales.</p>
+
+            <h3>4. Interfaz en español muy fácil de usar</h3>
+            <p>El panel de control hPanel de Hostinger está en español y es el más intuitivo del mercado. No necesitas saber programar para gestionar tu web.</p>
+
+            <h3>5. IA integrada para crear sitios</h3>
+            <p>Hostinger tiene su propio constructor de sitios con IA llamado <strong>Hostinger Horizons</strong> que crea tu web completa a partir de una descripción de texto. Perfecto para quien no tiene experiencia técnica.</p>
+
+            <div class="article-aff-inline" style="border-color:rgba(103,61,230,0.2);background:linear-gradient(135deg,rgba(103,61,230,0.05),rgba(123,82,240,0.03))">
+              <div class="aff-inline-content">
+                <div class="aff-inline-logo" style="background:linear-gradient(135deg,#673de6,#7b52f0)">H</div>
+                <div>
+                  <strong>Hostinger Premium</strong> — El plan más popular para blogs y webs de negocio
+                  <div style="font-size:0.8rem;color:var(--text-muted)">Desde $2.99/mes · Dominio gratis · SSL gratis · Soporte en español</div>
+                </div>
+              </div>
+              <a href="https://www.hostinger.com/affiliates" class="btn-aff-sm" style="background:linear-gradient(135deg,#673de6,#7b52f0)" target="_blank" rel="nofollow noopener">Ver oferta →</a>
+            </div>
+          </section>
+
+          <section id="planes">
+            <h2>Planes y precios de Hostinger en 2026</h2>
+            <p>Hostinger tiene tres planes principales de hosting compartido. Aquí los comparamos para que elijas el que mejor se adapta a tu proyecto:</p>
+
+            <div class="plan-comparison">
+              <div class="plan-card">
+                <div class="plan-name">PREMIUM</div>
+                <div class="plan-price">$2.99</div>
+                <div class="plan-period">/mes · Plan 12 meses</div>
+                <ul class="plan-features">
+                  <li>100 sitios web</li>
+                  <li>100 GB de almacenamiento</li>
+                  <li>Dominio gratis (1 año)</li>
+                  <li>SSL gratis para siempre</li>
+                  <li>Soporte 24/7 en español</li>
+                  <li>Email profesional gratis</li>
+                </ul>
+                <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" target="_blank" rel="nofollow noopener">Elegir Premium →</a>
+              </div>
+
+              <div class="plan-card popular">
+                <div class="plan-name">BUSINESS</div>
+                <div class="plan-price">$3.99</div>
+                <div class="plan-period">/mes · Plan 12 meses</div>
+                <ul class="plan-features">
+                  <li>100 sitios web</li>
+                  <li>200 GB de almacenamiento SSD</li>
+                  <li>Dominio gratis (1 año)</li>
+                  <li>SSL gratis para siempre</li>
+                  <li>Backups diarios automáticos</li>
+                  <li>CDN gratuito incluido</li>
+                  <li>WordPress con staging</li>
+                </ul>
+                <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" target="_blank" rel="nofollow noopener">Elegir Business →</a>
+              </div>
+
+              <div class="plan-card">
+                <div class="plan-name">CLOUD STARTUP</div>
+                <div class="plan-price">$7.99</div>
+                <div class="plan-period">/mes · Plan 12 meses</div>
+                <ul class="plan-features">
+                  <li>300 sitios web</li>
+                  <li>200 GB NVMe storage</li>
+                  <li>Dominio gratis (1 año)</li>
+                  <li>IP dedicada incluida</li>
+                  <li>Backups diarios</li>
+                  <li>Recursos dedicados</li>
+                  <li>Soporte prioritario</li>
+                </ul>
+                <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" target="_blank" rel="nofollow noopener">Elegir Cloud →</a>
+              </div>
+            </div>
+
+            <div class="callout callout-tip">💡 <strong>¿Cuál elegir?</strong> Para un blog o portal de contenido como Código IA, el plan <strong>Business a $3.99/mes</strong> es la mejor opción. Los backups diarios automáticos son imprescindibles para no perder tu trabajo.</div>
+          </section>
+
+          <section id="paso-a-paso">
+            <h2>Guía paso a paso: cómo publicar tu web en Hostinger</h2>
+            <p>Seguir estos pasos te tomará menos de 30 minutos. Al final tendrás tu web en vivo en internet con dominio y SSL configurados.</p>
+
+            <div class="step-card" data-step="PASO 1 — CONTRATAR EL PLAN">
+              <h3>Elige y contrata tu plan de hosting</h3>
+              <p>Entra a <a href="https://www.hostinger.com/affiliates" target="_blank" rel="nofollow noopener" style="color:#a78bfa">hostinger.com</a> y selecciona el plan que necesitas. Recomendamos el <strong>Business</strong> para proyectos serios.</p>
+              <p>Elige el período más largo disponible (48 meses) para obtener el precio más bajo. Luego completa el pago con tarjeta, PayPal o criptomonedas.</p>
+            </div>
+
+            <div class="step-card" data-step="PASO 2 — REGISTRAR TU DOMINIO">
+              <h3>Registra tu dominio (gratis el primer año)</h3>
+              <p>Después del pago, Hostinger te pedirá que registres tu dominio. Escribe el nombre que quieres (ej: <em>codigoia.com</em>) y verifica que esté disponible.</p>
+              <p>Si ya tienes un dominio en otro proveedor, también puedes transferirlo o apuntarlo a Hostinger desde la configuración DNS.</p>
+            </div>
+
+            <div class="step-card" data-step="PASO 3 — ACCEDER AL PANEL HPANEL">
+              <h3>Entra al panel de control hPanel</h3>
+              <p>Recibirás un email de bienvenida con tus credenciales. Entra a <em>hpanel.hostinger.com</em> y verás el panel de control en español con todo lo que necesitas para gestionar tu hosting.</p>
+              <p>El hPanel es el más intuitivo del mercado. No necesitas experiencia previa.</p>
+            </div>
+
+            <div class="step-card" data-step="PASO 4 — SUBIR TUS ARCHIVOS">
+              <h3>Sube los archivos de tu sitio web</h3>
+              <p>Tienes tres formas de publicar tu web:</p>
+              <ul class="article-list">
+                <li><strong>Administrador de archivos:</strong> Sube los archivos HTML/CSS/JS directamente desde el navegador a la carpeta <code style="background:rgba(0,212,255,0.08);padding:2px 8px;border-radius:4px;color:var(--cyan);font-size:0.85rem">public_html</code></li>
+                <li><strong>FTP con FileZilla:</strong> Para subidas masivas de archivos con más velocidad</li>
+                <li><strong>Git desde GitHub:</strong> Conecta tu repositorio de GitHub y despliega automáticamente con cada push</li>
+              </ul>
+              <p>Si usaste nuestras plantillas de Código IA, simplemente sube todos los archivos (index.html, styles/, scripts/) a la carpeta <code style="background:rgba(0,212,255,0.08);padding:2px 8px;border-radius:4px;color:var(--cyan);font-size:0.85rem">public_html</code>.</p>
+            </div>
+
+            <div class="step-card" data-step="PASO 5 — ACTIVAR SSL">
+              <h3>Activa el certificado SSL gratuito</h3>
+              <p>En hPanel ve a <strong>SSL → Let's Encrypt</strong> y activa el certificado para tu dominio. Esto es lo que pone el candado verde en el navegador y es imprescindible para SEO y para Google AdSense.</p>
+              <p>El proceso es automático y tarda menos de 5 minutos.</p>
+            </div>
+
+            <div class="step-card" data-step="PASO 6 — CONFIGURAR EMAIL PROFESIONAL">
+              <h3>Crea tu email profesional (gratis)</h3>
+              <p>En hPanel ve a <strong>Email → Cuentas de correo</strong> y crea tu email profesional: <em>hola@tudominio.com</em>. Esto le da credibilidad a tu proyecto y es necesario para solicitar Google AdSense.</p>
+            </div>
+
+            <div class="callout callout-success">🎉 <strong>¡Listo!</strong> Tu web ya está en línea. Cualquier persona en el mundo puede acceder escribiendo tu dominio en el navegador. Felicidades, eres oficialmente un propietario de web.</div>
+          </section>
+
+          <section id="ia-hostinger">
+            <h2>Hostinger + IA: la combinación perfecta para 2026</h2>
+            <p>Lo que hace a Hostinger especialmente relevante en 2026 es su integración con inteligencia artificial. No es solo un hosting — es una plataforma completa para crear y crecer con IA.</p>
+
+            <h3>Hostinger Horizons — Crea tu web con IA</h3>
+            <p>Hostinger Horizons es el constructor de sitios con IA más avanzado del mercado. Describes tu proyecto en texto y la IA genera un sitio web completo, funcional y responsivo en minutos. Sin código, sin diseño previo.</p>
+
+            <h3>AI Tools incluidas en todos los planes</h3>
+            <ul class="article-list">
+              <li><strong>AI Website Generator:</strong> crea tu web completa desde un prompt</li>
+              <li><strong>AI Content Creator:</strong> genera textos para tus páginas</li>
+              <li><strong>AI Logo Maker:</strong> crea tu logo profesional gratis</li>
+              <li><strong>AI Heatmaps:</strong> analiza el comportamiento de tus visitantes</li>
+            </ul>
+
+            <div class="article-aff-inline" style="border-color:rgba(103,61,230,0.2);background:linear-gradient(135deg,rgba(103,61,230,0.05),rgba(123,82,240,0.03))">
+              <div class="aff-inline-content">
+                <div class="aff-inline-logo" style="background:linear-gradient(135deg,#673de6,#7b52f0)">H</div>
+                <div>
+                  <strong>Hostinger Business</strong> — El plan ideal para portales de contenido
+                  <div style="font-size:0.8rem;color:var(--text-muted)">$3.99/mes · Backups diarios · CDN gratis · Hasta 81% de descuento</div>
+                </div>
+              </div>
+              <a href="https://www.hostinger.com/affiliates" class="btn-aff-sm" style="background:linear-gradient(135deg,#673de6,#7b52f0)" target="_blank" rel="nofollow noopener">Ver oferta →</a>
+            </div>
+          </section>
+
+          <section id="pros-cons">
+            <h2>Análisis honesto: pros y contras de Hostinger</h2>
+            <p>No todo es perfecto. Aquí te damos una evaluación honesta para que tomes la mejor decisión:</p>
+
+            <div class="pros-cons">
+              <div class="pros">
+                <h4>✅ Lo que nos gusta</h4>
+                <ul>
+                  <li>Precio imbatible desde $1.99/mes</li>
+                  <li>Soporte 24/7 en español real</li>
+                  <li>SSL y dominio gratis incluidos</li>
+                  <li>hPanel muy fácil de usar</li>
+                  <li>IA integrada para crear webs</li>
+                  <li>99.9% de uptime garantizado</li>
+                  <li>Backups diarios automáticos (Business+)</li>
+                  <li>Integración nativa con Cloudflare CDN</li>
+                  <li>30 días de garantía de devolución</li>
+                  <li>4.7/5 en Trustpilot con 61,000+ reseñas</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h4>⚠️ Lo que debes saber</h4>
+                <ul>
+                  <li>Precio sube al renovar (compromiso 48 meses para mejor precio)</li>
+                  <li>Sin cPanel tradicional (usan hPanel propio)</li>
+                  <li>Backups diarios solo desde plan Business</li>
+                  <li>Precio introductorio requiere compromiso largo</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="callout callout-tip">💡 <strong>Sobre el precio de renovación:</strong> El truco es contratar el plan de 48 meses desde el inicio. Así pagas el precio más bajo por 4 años. Cuando renueves, negocia o migra si encuentras mejor precio.</div>
+          </section>
+
+          <section id="conclusion">
+            <h2>¿Vale la pena Hostinger? Nuestra conclusión</h2>
+            <p>Después de usar Hostinger para hospedar nuestros propios proyectos, la respuesta es un <strong>sí rotundo</strong> para la gran mayoría de casos.</p>
+            <p>Si eres creador de contenido, emprendedor, freelancer o simplemente quieres tener presencia en internet, Hostinger es la opción más inteligente en 2026. No existe otro hosting que ofrezca esta combinación de precio, velocidad, soporte en español y herramientas de IA.</p>
+            <p>El portal Código IA que estás leyendo ahora mismo está diseñado para ser hospedado exactamente ahí. Desde GitHub a Hostinger, con dominio propio y SSL, en menos de una hora.</p>
+          </section>
+
+        </div>
+
+        <!-- Final CTA -->
+        <div class="hostinger-cta-box">
+          <div style="font-size:2.5rem;margin-bottom:12px">🌐</div>
+          <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:12px">¿Listo para publicar tu web?</h2>
+          <p style="color:var(--text-secondary);max-width:480px;margin:0 auto 8px;line-height:1.7">Empieza con Hostinger hoy y ten tu sitio en línea en menos de 30 minutos. Garantía de devolución de 30 días.</p>
+          <p style="color:#a78bfa;font-family:var(--font-display);font-size:0.85rem;font-weight:700;margin-bottom:24px">Hasta 81% de descuento · Dominio gratis · SSL gratis</p>
+          <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" style="max-width:340px;margin:0 auto;display:block;font-size:1rem;padding:16px" target="_blank" rel="nofollow noopener">
+            🚀 Empezar con Hostinger ahora →
+          </a>
+          <p style="font-size:0.7rem;color:var(--text-muted);margin-top:14px">* Este es un enlace de afiliado. Código IA puede recibir una comisión si contratas, sin costo adicional para ti.</p>
+        </div>
+
+        <div class="article-tags">
+          <span>🏷️ Etiquetas:</span>
+          <a href="#">Hosting</a><a href="#">Hostinger</a><a href="#">Publicar web</a><a href="#">Dominio</a><a href="#">SSL</a>
+        </div>
+
+        <div class="article-share">
+          <span>Compartir:</span>
+          <a href="#" class="share-btn">Twitter / X</a>
+          <a href="#" class="share-btn">WhatsApp</a>
+          <a href="#" class="share-btn">LinkedIn</a>
+        </div>
+
+        <div class="related-articles">
+          <h3 class="related-title">Artículos relacionados</h3>
+          <div class="related-grid">
+            <a href="articulo-ganar-dinero-ia.html" class="related-card"><div class="related-img ai-img-3"></div><div class="related-info"><span class="related-cat">Ganar con IA</span><h4>Cómo ganar dinero con IA en 2026</h4></div></a>
+            <a href="articulo-herramientas-ia-gratis.html" class="related-card"><div class="related-img ai-img-2"></div><div class="related-info"><span class="related-cat">Herramientas</span><h4>Mejores herramientas IA gratis</h4></div></a>
+            <a href="articulo-ia-marketing.html" class="related-card"><div class="related-img ai-img-7"></div><div class="related-info"><span class="related-cat">Marketing</span><h4>IA que revoluciona el marketing</h4></div></a>
+          </div>
+        </div>
+
+        <div class="article-newsletter-cta">
+          <div class="newsletter-cta-icon">📬</div>
+          <h3>¿Te fue útil esta guía?</h3>
+          <p>Recibe cada semana guías, herramientas y estrategias de IA. Gratis.</p>
+          <div class="newsletter-form" style="max-width:400px;margin:0 auto">
+            <input type="email" placeholder="tu@email.com" class="newsletter-input" id="articleEmail">
+            <button class="newsletter-btn" onclick="subscribeFromArticle()">Suscribirme →</button>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="sidebar article-sidebar">
+        <!-- Hostinger CTA sidebar -->
+        <div class="sidebar-widget" style="background:linear-gradient(135deg,rgba(103,61,230,0.1),rgba(123,82,240,0.05));border-color:rgba(103,61,230,0.2);text-align:center">
+          <div style="font-size:2rem;margin-bottom:8px">🌐</div>
+          <div style="font-family:var(--font-display);font-size:0.85rem;font-weight:700;color:#a78bfa;margin-bottom:8px">HOSTING RECOMENDADO</div>
+          <h3 style="font-family:var(--font-ui);font-weight:700;font-size:1rem;margin-bottom:8px">Hostinger</h3>
+          <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:12px">Desde $1.99/mes · Dominio gratis · SSL gratis · Soporte en español</p>
+          <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#673de6,#7b52f0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px">$1.99</div>
+          <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:16px">/mes con plan 48 meses</div>
+          <a href="https://www.hostinger.com/affiliates" class="btn-hostinger" target="_blank" rel="nofollow noopener" style="font-size:0.85rem;padding:10px">Ver oferta →</a>
+          <p style="font-size:0.65rem;color:var(--text-muted);margin-top:8px">* Enlace de afiliado</p>
+        </div>
+
+        <div class="sidebar-widget ad-widget"><span class="ad-label">Publicidad</span><div class="ad-placeholder ad-rect"></div></div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">🔥 Lo más leído</h3>
+          <ol class="trending-list">
+            <li><a href="articulo-chatgpt-vs-claude-vs-gemini.html">ChatGPT vs Claude vs Gemini 2026</a></li>
+            <li><a href="articulo-ganar-dinero-ia.html">Cómo ganar dinero con IA</a></li>
+            <li><a href="articulo-herramientas-ia-gratis.html">Herramientas IA gratis 2026</a></li>
+            <li><a href="articulo-prompts-chatgpt.html">10 prompts que ahorran horas</a></li>
+            <li><a href="articulo-imagenes-ia.html">Mejores IAs para imágenes</a></li>
+          </ol>
+        </div>
+
+        <div class="sidebar-widget ad-widget"><span class="ad-label">Publicidad</span><div class="ad-placeholder ad-rect"></div></div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0;flex-direction:row;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <a href="index.html" class="nav-logo"><span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span></a>
+      <p>© 2026 Código IA. Todos los derechos reservados.</p>
+      <div style="display:flex;gap:16px;font-size:0.8rem">
+        <a href="privacidad.html" style="color:var(--text-muted)">Privacidad</a>
+        <a href="sobre-nosotros.html" style="color:var(--text-muted)">Sobre nosotros</a>
+        <a href="contacto.html" style="color:var(--text-muted)">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+<div class="toast" id="toast"></div>
+<script src="scripts/main.js"></script>
+<script>
+window.subscribeFromArticle = function() {
+  const e = document.getElementById('articleEmail')?.value;
+  if (!e || !e.includes('@')) return;
+  const t = document.getElementById('toast');
+  t.textContent = '🎉 ¡Suscrito! Revisa tu email.';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+};
+</script>
+</body>
+</html>
