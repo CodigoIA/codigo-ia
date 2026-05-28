@@ -651,19 +651,30 @@
 <div class="toast" id="toast"></div>
 <script src="scripts/main.js"></script>
 <script>
-// Filter functionality
-document.querySelectorAll('.hub-filter').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.hub-filter').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.getAttribute('data-cat');
-    document.querySelectorAll('.product-card').forEach(card => {
-      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-        card.style.display = 'flex';
-        card.style.animation = 'fade-in 0.3s ease';
-      } else {
-        card.style.display = 'none';
-      }
+document.addEventListener('DOMContentLoaded', function() {
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.hub-filter');
+  const productCards = document.querySelectorAll('.product-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active from all
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active to clicked
+      this.classList.add('active');
+
+      const cat = this.getAttribute('data-cat');
+
+      productCards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+          card.style.flexDirection = 'column';
+          card.style.opacity = '1';
+          card.style.animation = 'fade-in 0.3s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
   });
 });
