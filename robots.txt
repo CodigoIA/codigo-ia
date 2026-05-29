@@ -1,12 +1,15 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://codigoia.github.io/codigo-ia/sitemap.xml
 
 # Block search result pages
-Disallow: /buscar
-Disallow: /search
+Disallow: /*?q=
+Disallow: /*?search=
 
-# Crawl delay for politeness
-Crawl-delay: 1
+# Allow important pages
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
