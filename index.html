@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+pub_<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -955,7 +955,7 @@ window.subscribeBeehiiv = async function() {
   msg.textContent = '⏳ Suscribiendo...';
   msg.style.color = 'rgba(0,212,255,0.7)';
   try {
-    const res = await fetch('https://api.beehiiv.com/v2/publications/pub_codigo-ia/subscriptions', {
+    const res = await fetch('https://api.beehiiv.com/v2/publications/pub_2f85680c-0e29-4449-aeef-216a05331545/subscriptions', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email, reactivate_existing: false, send_welcome_email: true })
@@ -995,3 +995,4 @@ window.subscribeNewsletter = function() {
 </script>
 </body>
 </html>
+
