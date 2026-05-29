@@ -4,53 +4,129 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://codigoia.com/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://codigoia.github.io/codigo-ia/</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://codigoia.com/articulo-chatgpt-vs-claude-vs-gemini.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://codigoia.github.io/codigo-ia/analisis.html</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>Código IA</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-28</news:publication_date>
-      <news:title>ChatGPT vs Claude vs Gemini: ¿Cuál es la mejor IA en 2026?</news:title>
-    </news:news>
   </url>
 
   <url>
-    <loc>https://codigoia.com/herramientas/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://codigoia.github.io/codigo-ia/herramientas-recomendadas.html</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-hostinger-guia-completa.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://codigoia.com/noticias/</loc>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-jasper-ai-review.html</loc>
     <lastmod>2026-05-28</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://codigoia.com/tutoriales/</loc>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-semrush-review.html</loc>
     <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://codigoia.com/prompts/</loc>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-hubspot-review.html</loc>
     <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-notion-ai-review.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-chatgpt-vs-claude-vs-gemini.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-herramientas-ia-gratis.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-ganar-dinero-ia.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-imagenes-ia.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-prompts-chatgpt.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-ia-marketing.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/articulo-ia-estudiantes.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/sobre-nosotros.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/privacidad.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://codigoia.github.io/codigo-ia/contacto.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>

@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codigoia.com/sitemap.xml
+# Sitemap
+Sitemap: https://codigoia.github.io/codigo-ia/sitemap.xml
+
+# Block search result pages
+Disallow: /buscar
+Disallow: /search
+
+# Crawl delay for politeness
+Crawl-delay: 1
