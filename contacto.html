@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9MH7894LB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -38,13 +37,13 @@
     .contact-form-wrap::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--grad-brand); }
     .contact-form-wrap h2 { font-family: var(--font-ui); font-size: 1.3rem; font-weight: 700; margin-bottom: 24px; }
     .form-group { margin-bottom: 20px; }
-    .form-label { display: block; font-family: var(--font-ui); font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; letter-spacing: 0.03em; }
-    .form-input, .form-select, .form-textarea { width: 100%; padding: 12px 16px; background: var(--bg-input); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-body); outline: none; transition: border-color 0.2s; }
+    .form-label { display: block; font-family: var(--font-ui); font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; }
+    .form-input, .form-select, .form-textarea { width: 100%; padding: 12px 16px; background: var(--bg-input); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 0.9rem; font-family: var(--font-body); outline: none; transition: border-color 0.2s; box-sizing: border-box; }
     .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,212,255,0.06); }
     .form-select { background: var(--bg-input); cursor: pointer; }
     .form-select option { background: var(--bg-card); }
     .form-textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
-    .form-btn { width: 100%; padding: 14px; background: var(--grad-brand); border: none; border-radius: 12px; color: white; font-family: var(--font-ui); font-weight: 700; font-size: 1rem; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s; box-shadow: 0 0 20px rgba(0,212,255,0.2); }
+    .form-btn { width: 100%; padding: 14px; background: var(--grad-brand); border: none; border-radius: 12px; color: white; font-family: var(--font-ui); font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.3s; box-shadow: 0 0 20px rgba(0,212,255,0.2); }
     .form-btn:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(0,212,255,0.3); }
     .form-note { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 12px; }
     @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
@@ -75,16 +74,11 @@
   <div class="contact-container">
 
     <div class="contact-header">
-      <div class="hero-badge" style="display:inline-flex;margin-bottom:20px">
-        <span class="badge-dot"></span>
-        Estamos aquí para ayudarte
-      </div>
       <h1>Ponte en <span class="gradient-text">Contacto</span></h1>
       <p>¿Tienes una pregunta, sugerencia o propuesta de colaboración? Nos encanta escuchar a nuestra comunidad.</p>
     </div>
 
     <div class="contact-grid">
-
       <div class="contact-info">
         <div class="contact-card">
           <div class="contact-card-icon">📧</div>
@@ -92,32 +86,28 @@
           <p>Para consultas generales sobre el contenido del sitio.</p>
           <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
-
         <div class="contact-card">
           <div class="contact-card-icon">📢</div>
           <h3>Publicidad y patrocinios</h3>
           <p>¿Quieres anunciar tu herramienta o producto de IA en Código IA?</p>
           <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
-
         <div class="contact-card">
           <div class="contact-card-icon">✍️</div>
           <h3>Colaboraciones editoriales</h3>
           <p>¿Eres experto en IA y quieres escribir para nosotros?</p>
           <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
-
         <div class="contact-card">
           <div class="contact-card-icon">📱</div>
           <h3>Redes sociales</h3>
           <p>Síguenos para contenido diario sobre IA.</p>
           <a href="https://instagram.com/codigo.iaoficial" target="_blank" rel="noopener">@codigo.iaoficial en Instagram →</a>
         </div>
-
         <div class="contact-card" style="border-color:rgba(0,212,255,0.2);background:linear-gradient(135deg,var(--bg-card),rgba(0,212,255,0.02))">
           <div class="contact-card-icon">⏱️</div>
           <h3>Tiempo de respuesta</h3>
-          <p>Respondemos todos los emails en un plazo de <strong style="color:var(--cyan)">24 a 48 horas hábiles</strong>. Los fines de semana pueden tardar un poco más.</p>
+          <p>Respondemos todos los emails en un plazo de <strong style="color:var(--cyan)">24 a 48 horas hábiles</strong>.</p>
         </div>
       </div>
 
@@ -140,7 +130,6 @@
             <option value="publicidad">Publicidad y patrocinios</option>
             <option value="colaboracion">Colaboración editorial</option>
             <option value="error">Reportar un error</option>
-            <option value="privacidad">Consulta de privacidad</option>
             <option value="otro">Otro</option>
           </select>
         </div>
@@ -148,29 +137,25 @@
           <label class="form-label" for="message">Tu mensaje *</label>
           <textarea id="message" class="form-textarea" placeholder="Escribe aquí tu mensaje..."></textarea>
         </div>
-        <button class="form-btn" onclick="sendContact()">
-          Enviar mensaje →
-        </button>
-        <p class="form-note">Al enviar este formulario aceptas nuestra <a href="privacidad.html" style="color:var(--cyan)">Política de Privacidad</a>.</p>
+        <button class="form-btn" onclick="sendContact()">Enviar mensaje →</button>
+        <p class="form-note">Al enviar aceptas nuestra <a href="privacidad.html" style="color:var(--cyan)">Política de Privacidad</a>.</p>
       </div>
-
     </div>
 
-    <!-- FAQ -->
     <div style="margin-top:64px">
       <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;text-align:center;margin-bottom:32px">Preguntas <span class="gradient-text">frecuentes</span></h2>
       <div style="display:flex;flex-direction:column;gap:16px">
         <div class="contact-card">
-          <h3>¿Cómo puedo sugerir una herramienta de IA para incluir en el directorio?</h3>
-          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Usa el formulario de contacto seleccionando "Sugerencia de contenido" y cuéntanos sobre la herramienta. La revisaremos y si cumple nuestros estándares la incluiremos.</p>
+          <h3>¿Cómo puedo sugerir una herramienta de IA?</h3>
+          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Usa el formulario seleccionando "Sugerencia de contenido". La revisaremos y si cumple nuestros estándares la incluiremos.</p>
         </div>
         <div class="contact-card">
           <h3>¿Cómo puedo anunciar mi producto en Código IA?</h3>
-          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Escríbenos a bycodigoia@gmail.com con información sobre tu producto y presupuesto aproximado. Ofrecemos banners, artículos patrocinados y menciones en newsletter.</p>
+          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Escríbenos a bycodigoia@gmail.com con información sobre tu producto. Ofrecemos banners, artículos patrocinados y menciones en newsletter.</p>
         </div>
         <div class="contact-card">
-          <h3>¿Puedo republicar contenido de Código IA en mi sitio?</h3>
-          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">No está permitido republicar contenido sin autorización expresa. Puedes citar fragmentos con enlace a la fuente original. Para licencias de contenido, contáctanos.</p>
+          <h3>¿Puedo republicar contenido de Código IA?</h3>
+          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">No está permitido sin autorización expresa. Puedes citar fragmentos con enlace a la fuente original.</p>
         </div>
       </div>
     </div>
@@ -185,34 +170,39 @@
         <div class="footer-logo-wrap">
           <a href="index.html" class="nav-logo"><span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span></a>
         </div>
-        <p class="footer-tagline">Nuevo medio independiente sobre Inteligencia Artificial en español.</p>
+        <p class="footer-tagline">Nuevo medio independiente sobre Inteligencia Artificial en español. Guías prácticas, herramientas seleccionadas y análisis claros para el mercado hispanohablante.</p>
         <div class="footer-social">
           <a href="https://instagram.com/codigo.iaoficial" class="footer-social-btn" target="_blank" rel="noopener">📸</a>
+          <a href="#" class="footer-social-btn">🐦</a>
+          <a href="#" class="footer-social-btn">💼</a>
+          <a href="#" class="footer-social-btn">▶️</a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title">Navegación</div>
+        <div class="footer-col-title">Comparativas</div>
         <ul class="footer-col-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="analisis.html">Análisis</a></li>
-          <li><a href="herramientas-recomendadas.html">Herramientas</a></li>
-          <li><a href="mejores-ia-productividad.html">Productividad</a></li>
+          <li><a href="comparativa-chatgpt-vs-claude.html">ChatGPT vs Claude</a></li>
+          <li><a href="articulo-chatgpt-vs-claude-vs-gemini.html">ChatGPT vs Claude vs Gemini</a></li>
+          <li><a href="mejores-ia-productividad.html">Mejores IA productividad</a></li>
+          <li><a href="mejores-ia-gratis.html">Mejores IA gratuitas</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Guías</div>
+        <ul class="footer-col-links">
+          <li><a href="guia-claude-ai.html">Guía Claude AI</a></li>
+          <li><a href="como-crear-imagenes-ia-gratis.html">Imágenes con IA gratis</a></li>
+          <li><a href="suno-ai-crear-musica.html">Música con IA — Suno</a></li>
+          <li><a href="articulo-prompts-chatgpt.html">Prompts ChatGPT</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Editorial</div>
         <ul class="footer-col-links">
           <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="metodologia.html">Metodología</a></li>
-          <li><a href="privacidad.html">Privacidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Contacto</div>
-        <ul class="footer-col-links">
-          <li><a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a></li>
-          <li><a href="https://instagram.com/codigo.iaoficial" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="metodologia.html">Metodología editorial</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="politica-afiliados.html">Afiliados</a></li>
         </ul>
       </div>
     </div>
@@ -227,10 +217,10 @@
 <script src="scripts/main.js"></script>
 <script>
 window.sendContact = function() {
-  const name = document.getElementById('name')?.value;
-  const email = document.getElementById('email')?.value;
+  const name = document.getElementById('name')?.value?.trim();
+  const email = document.getElementById('email')?.value?.trim();
   const subject = document.getElementById('subject')?.value;
-  const message = document.getElementById('message')?.value;
+  const message = document.getElementById('message')?.value?.trim();
   if (!name || !email || !subject || !message) {
     const t = document.getElementById('toast');
     t.textContent = '⚠️ Por favor completa todos los campos';
