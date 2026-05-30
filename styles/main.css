@@ -2136,5 +2136,17 @@ button { cursor: pointer; font-family: inherit; }
     z-index: 999;
   }
   .news-ticker { top: var(--nav-height); }
+   /* ── CORREÇÕES DE CONTRASTE ACESSIBILIDADE ── */
+.sidebar-num{color:rgba(0,212,255,0.35)}
+.sidebar-time{color:#8899aa}
+.news-card-time,.news-card-read{color:#8899aa}
+.trending-rank{color:rgba(0,212,255,0.25)}
+.trending-rank.top{color:rgba(0,212,255,0.45)}
+.trending-meta{color:#8899aa}
+.comp-vs{color:#8899aa}
+.aff-disclaimer{color:#8899aa}
+.footer-copyright,.footer-affiliate-note{color:#8899aa}
+.authority-desc{color:#8899aa}
+.hero-time,.hero-read,.hero-source{color:#8899aa}
 }
 
