@@ -9,6 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9MH7894LB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X9MH7894LB');
+  </script>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/article.css">
   <style>
@@ -50,9 +58,11 @@
       <span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span>
     </a>
     <nav class="nav-links" id="navLinks">
+      <a href="herramientas-recomendadas.html" class="nav-link" style="color:var(--cyan)">⭐ Recomendadas</a>
+      <a href="analisis.html" class="nav-link" style="color:var(--cyan)">📋 Análisis</a>
       <a href="index.html#herramientas" class="nav-link">Herramientas</a>
-      <a href="index.html#noticias" class="nav-link">Noticias</a>
-      <a href="index.html#tutoriales" class="nav-link">Tutoriales</a>
+      <a href="mejores-ia-productividad.html" class="nav-link">Productividad</a>
+      <a href="ia-para-negocios.html" class="nav-link">Negocios</a>
     </nav>
     <div class="nav-actions">
       <a href="index.html#newsletter" class="btn-cta">Suscríbete</a>
@@ -80,21 +90,21 @@
           <div class="contact-card-icon">📧</div>
           <h3>Email general</h3>
           <p>Para consultas generales sobre el contenido del sitio.</p>
-          <a href="mailto:hola@codigoia.com">hola@codigoia.com</a>
+          <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
 
         <div class="contact-card">
           <div class="contact-card-icon">📢</div>
           <h3>Publicidad y patrocinios</h3>
           <p>¿Quieres anunciar tu herramienta o producto de IA en Código IA?</p>
-          <a href="mailto:publicidad@codigoia.com">publicidad@codigoia.com</a>
+          <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
 
         <div class="contact-card">
           <div class="contact-card-icon">✍️</div>
           <h3>Colaboraciones editoriales</h3>
           <p>¿Eres experto en IA y quieres escribir para nosotros?</p>
-          <a href="mailto:editorial@codigoia.com">editorial@codigoia.com</a>
+          <a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a>
         </div>
 
         <div class="contact-card">
@@ -141,7 +151,7 @@
         <button class="form-btn" onclick="sendContact()">
           Enviar mensaje →
         </button>
-        <p class="form-note">Al enviar este formulario aceptas nuestra <a href="politica-afiliados.html" style="color:var(--text-muted)">Afiliados</a><a href="privacidad.html" style="color:var(--cyan)">Política de Privacidad</a>.</p>
+        <p class="form-note">Al enviar este formulario aceptas nuestra <a href="privacidad.html" style="color:var(--cyan)">Política de Privacidad</a>.</p>
       </div>
 
     </div>
@@ -156,7 +166,7 @@
         </div>
         <div class="contact-card">
           <h3>¿Cómo puedo anunciar mi producto en Código IA?</h3>
-          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Escríbenos a publicidad@codigoia.com con información sobre tu producto y presupuesto aproximado. Ofrecemos banners, artículos patrocinados y menciones en newsletter.</p>
+          <p style="margin:8px 0 0;font-size:0.875rem;color:var(--text-secondary)">Escríbenos a bycodigoia@gmail.com con información sobre tu producto y presupuesto aproximado. Ofrecemos banners, artículos patrocinados y menciones en newsletter.</p>
         </div>
         <div class="contact-card">
           <h3>¿Puedo republicar contenido de Código IA en mi sitio?</h3>
@@ -168,21 +178,51 @@
   </div>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0;flex-direction:row;justify-content:space-between;flex-wrap:wrap;gap:12px">
-      <a href="index.html" class="nav-logo"><span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span></a>
-      <p>© 2026 Código IA. Todos los derechos reservados.</p>
-      <div style="display:flex;gap:16px;font-size:0.8rem">
-        <a href="privacidad.html" style="color:var(--text-muted)">Privacidad</a>
-        <a href="sobre-nosotros.html" style="color:var(--text-muted)">Sobre nosotros</a>
-        <a href="contacto.html" style="color:var(--cyan)">Contacto</a>
+<footer class="footer-pro">
+  <div class="hero-container">
+    <div class="footer-pro-grid">
+      <div class="footer-brand-col">
+        <div class="footer-logo-wrap">
+          <a href="index.html" class="nav-logo"><span class="logo-text">CÓDIGO <span class="logo-accent">IA</span></span></a>
+        </div>
+        <p class="footer-tagline">Nuevo medio independiente sobre Inteligencia Artificial en español.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/codigo.iaoficial" class="footer-social-btn" target="_blank" rel="noopener">📸</a>
+        </div>
       </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="analisis.html">Análisis</a></li>
+          <li><a href="herramientas-recomendadas.html">Herramientas</a></li>
+          <li><a href="mejores-ia-productividad.html">Productividad</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Editorial</div>
+        <ul class="footer-col-links">
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="metodologia.html">Metodología</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-col-links">
+          <li><a href="mailto:bycodigoia@gmail.com">bycodigoia@gmail.com</a></li>
+          <li><a href="https://instagram.com/codigo.iaoficial" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p class="footer-copyright">© 2026 Código IA. Todos los derechos reservados.</p>
+      <p class="footer-affiliate-note">Algunos enlaces son de afiliados. Podemos recibir una comisión sin costo adicional para ti.</p>
     </div>
   </div>
 </footer>
 
-<button class="scroll-top" id="scrollTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
 <div class="toast" id="toast"></div>
 <script src="scripts/main.js"></script>
 <script>
@@ -198,14 +238,7 @@ window.sendContact = function() {
     setTimeout(() => t.classList.remove('show'), 3000);
     return;
   }
-  const t = document.getElementById('toast');
-  t.textContent = '✅ ¡Mensaje enviado! Te respondemos en 24-48h.';
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 4000);
-  document.getElementById('name').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('subject').value = '';
-  document.getElementById('message').value = '';
+  window.location.href = 'mailto:bycodigoia@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\n\n' + message);
 };
 </script>
 </body>
